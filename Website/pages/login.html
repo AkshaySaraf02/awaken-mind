@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awaken | Unlock your Peace</title>
+    <link rel="stylesheet" href="/Website/assets/css/login.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@200;400;700&display=swap');
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="gradient"></div>
+        <img class="login-image" src="/Website/assets/images/login.jpg" alt="">
+        <div class="login-container">
+            <div class="brand">
+                <h1>Awaken</h1>
+            </div>
+            <div class="login">
+                <div class="type">Login</div>
+                <div class="form-container">
+                    <form class="login-form" id="login-form" onsubmit=logIn(event)>
+                        <label for="email">Username or Email</label>
+                        <input type="text" id="email" class="email">
+                        <label for="password" class="password">Password <span class="togglePassword">
+                                <a class="toggler" onclick="togglePassword()">Show</a></span></label>
+                        <input type="password" id="password" class="password-input">
+                        <a href="#" class="fp">Forgot Password?</a>
+                        <div class="invalid-id-pass" id="invalid-id-pass">
+                            Incorrect email or password.
+                        </div>
+                        <button type="submit" value="Login" class="login-btn" id="login-btn">Login</button>
+                        <div class="make-account">
+                            Do not have an account yet? <a href="signup.html">Signup</a> now.
+                        </div>
+
+                    </form>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    </div>
+</body>
+<script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-auth-compat.js"></script>
+<script src="/Website/assets/js/login.js"></script>
+
+</html>
