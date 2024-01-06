@@ -45,6 +45,7 @@ html body {
     width: 50vw;
     left: 50vw;
     top: 1vh;
+    bottom: 1vh;
 }
 
 .signup-container .brand {
@@ -160,12 +161,35 @@ html body {
 }
 
 .already-user a {
-    color: rgb(130, 118, 245)
+    color: rgb(130, 118, 245);
 }
 
 
-@media screen and (max-width:560px) {
-    .signup-container {
-        backdrop-filter: blur(10px);
+@media screen and (max-width:925px) {
+    .signup-image {
+        visibility: hidden;
     }
+
+    .container {
+        background-position: center;
+        background-size: cover;
+    }
+
+    .signup-container {
+        border: #173042;
+        position: absolute;
+        left: 25vw;
+        top: 1vh;
+        padding-bottom: 20px;
+    }
+
+    .signup-container .signup .form-container input {
+        width: 70%;
+    }
+
+    .signup-container .signup .form-container form label {
+        width: 71%;
+    }
+
+
 }
