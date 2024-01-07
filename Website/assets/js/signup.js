@@ -32,9 +32,11 @@ function validateForm(event) {
     const password = document.forms['signup-form']['password'].value
     const name = document.forms['signup-form']['name'].value
 
-    if (!(email.includes('@') && email.includes('.com'))) {
+    if (!(email.includes('@') && email.toLowerCase().includes('.com'))) {
         console.log('Invalid!');
+        document.getElementById("invalid-id-pass").textContent = 'Invalid or empty Email.'
         document.getElementById("invalid-id-pass").style.display = 'block'
+
         return false
     }
 
@@ -65,7 +67,22 @@ function validateForm(event) {
                 .catch((error) => {
                     console.error("Error adding user to database:", error);
                 });
+            document.getElementById("invalid-id-pass").style.display = 'none'
 
+        }).catch((error) => {
+            console.log("Error Creating Account", String(error));
+            if (String(error).includes("email-already-in-use")) {
+                document.getElementById("invalid-id-pass").textContent = 'Account with this email already exists.'
+                document.getElementById("invalid-id-pass").style.display = 'block'
+            }
+            else if (String(error).includes("missing-password")) {
+                document.getElementById("invalid-id-pass").textContent = 'Password cannot be empty.'
+                document.getElementById("invalid-id-pass").style.display = 'block'
+            }
+            else if (String(error).includes("weak-password")) {
+                document.getElementById("invalid-id-pass").textContent = 'Password should be atleast 6 characters.'
+                document.getElementById("invalid-id-pass").style.display = 'block'
+            }
         });
     }
 }
