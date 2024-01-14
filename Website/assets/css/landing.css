@@ -27,7 +27,8 @@ html body {
     list-style: none;
     font-weight: bold;
     letter-spacing: 1px;
-    color: #835b87
+    color: #835b87;
+    cursor: pointer;
 }
 
 .get-started {
@@ -67,7 +68,7 @@ html body {
 }
 
 .awaken {
-    font-size: 13vh;
+    font-size: 10vh;
     width: fit-content;
     background: linear-gradient(90deg, #4865FF, #9D74FF, #D984D1);
     background-clip: text;
@@ -79,14 +80,14 @@ html body {
 
 .your-mind {
     display: flex;
-    font-size: 55px;
+    font-size: 42px;
     line-height: 135%;
     color: white;
     gap: 20px;
 }
 
 .mind {
-    font-size: 13vh;
+    font-size: 10vh;
     width: fit-content;
     background: linear-gradient(90deg, #D984D1, #9D74FF, #4865FF);
     width: fit-content;
@@ -99,4 +100,32 @@ html body {
 
 .navbar a {
     text-decoration: none;
+}
+
+.landing-image img {
+    width: 70vw;
+    position: absolute;
+    left: 33vw;
+    top: 20vh;
+    bottom: 20vh;
+}
+
+.features {
+    background-color: white;
+    margin-top: 43vh;
+    height: 70vh;
+    width: 100vw;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.featues h1 {
+
+    justify-content: center;
+    align-items: center;
+}
+
+.card1 {
+    border-radius: 2px solid black;
+    border-radius: 25px;
 }
