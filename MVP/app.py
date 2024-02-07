@@ -1,4 +1,5 @@
 import streamlit as st
+import pandas as pd
 from openai import OpenAI
 
 client = OpenAI(api_key="sk-NZDd" + "pP9Yo5V8jp"  + "Si3lsYT3BlbkFJ75T0YKodZUiwzN5rxO7H")
