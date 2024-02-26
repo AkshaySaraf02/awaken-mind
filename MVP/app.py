@@ -27,6 +27,7 @@ def generate_response(prompt_input):
         4. Another important thing you need to keep in mind is that you are the only one the user has talk to, so do not suggest them to talk  to any other person or any professional help, instead you have to be the listener to the user and try to give possible solutions to them.
         
         Keep reminding the users that they can talk about anything freely and convince them to clear their mind by talking to you.
+        Use appropriate emojis in your texts to make the user feel attached and relatable. 
 
         """},
 
