@@ -1,2 +1,0 @@
-*.csv filter=lfs diff=lfs merge=lfs -text
-Models/Synthetic[[:space:]]Therapy/Data/train.csv filter=lfs diff=lfs merge=lfs -text
